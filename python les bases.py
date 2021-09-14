@@ -1,3 +1,4 @@
+#https://pixees.fr/informatiquelycee/n_site/nsi_prem_pythonbase.html
 #1
 print("hello world !")
 #2
@@ -72,3 +73,58 @@ print(f)
 int = 23949894
 float = 49.3345
 print(int + float)
+#Dans les autres langages une erreur serait retourné mais dans python les deux s'adittione sans problème 
+
+#9
+#Tester le code suivant :
+ma_chaine = "Bonjour le monde !"
+print(ma_chaine)
+
+#Le signe + et les chaînes de caractères:
+#L'utilisation du signe + ne se limite pas à l'addition. 
+#Il est aussi utilisé pour la concaténation.
+
+#10
+#Quelle est la chaîne de caractère associée au nom mon_expression après l'exécution du programme ci-dessous ?
+a = "Hello"
+b = "World"
+mon_expression = a + b
+
+#reponse: HelloWorld
+print(mon_expression)
+
+#Testez le code suivant :
+ma_chaine_1 = "Bonjour "
+ma_chaine_2 = "le "
+res = ma_chaine_1 + ma_chaine_2 + "monde!"
+#Les 2 noms ma_chaine_1 et ma_chaine_2 sont associés à 2 chaînes de caractères, nous avons donc bien ici une concaténation.
+#Mais que se passe-t-il si une des deux variable est de type nombre (entier ou flottant) ?
+
+#12
+mon_nombre = 5
+res = "Nombre de personnes : " + str(mon_nombre)
+#Comme vous pouvez le constater, nous avons droit à une erreur. En effet, il n'est pas possible de concaténer une chaîne de caractères et un nombre.
+
+#Python nous offre 2 solutions :
+#l'utilisation de la méthode "str"
+#l'utilisation des "fstring"
+#La méthode (nous verrons plus loin la notion de méthode) "str" permet de transformer un nombre en chaîne de caractères (si la transformation n'est pas possible, nous aurons une erreur)
+
+#13
+mon_nombre = 5
+mon_nombre = str(mon_nombre)
+res = f"Nombre de personnes : {mon_nombre}"
+print(res)
+
+#Les fonctions
+#Les fonctions permettent de décomposer un programme complexe en une série de sous-programmes plus simples. De plus, les fonctions sont réutilisables : si nous disposons d'une fonction capable de calculer une racine carrée,
+#par exemple, nous pouvons l'utiliser un peu partout dans notre programme sans avoir à la réécrire à chaque fois (on parle de factorisation du code)
+
+#Voici la syntaxe employée en Python pour définir une fonction :
+"""def nom_de_la_fonction(parametre):
+	instruction_1
+	instruction_2
+	return y
+suite programme"""
+
+#16

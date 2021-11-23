@@ -49,23 +49,39 @@ def table():
             tables.append(y)
 
 #Ex3
+def inputuser():
+    typeinput = input("Voulez-vous faire une liste ou une chaine de caractère?\nListe:A\nChaine:B\n")
+    if typeinput == "A":
+        charlist = []
+        chars = int(input("combien d'éléments voulez-vous?"))
+        says = ""
+        for i in range (chars):
+            bruh = input("donnez vos éléments")
+            charlist.append(bruh)
+        
+    if typeinput == "B":
+        typeinput2 = input("voulez-vous donnez objet par objet ou sous forme de chaine directe?\nobjet:A\ndirecte:B\n")
+        if typeinput2 == "A":
+            charlist1 = []
+            chars = int(input("combien de caractères voulez-vous?"))
+            says = ""
+            for i in range (chars):
+                bruh = input("donnez vos caractères")
+                charlist1.append(bruh)
+            for i in range(len(charlist)):
+                charlist = charlist + charlist1[i]
+        if typeinput2 == "B":
+            charlist = input("entrez votre chaine de caractère.")
+    return charlist
+
+
+
 
 def noespachar():
-    charlist = []
-    chars = int(input("combien de caractère voulez-vous?"))
-    says = ""
-    
-    for i in range (chars):
-        
-        bruh = input("donner votre caractère")
-        charlist.append(bruh)
-    print(charlist)
-    
     for i in range(len(charlist)):
         if charlist[i] != " ":
             says = says + charlist[i]
     print(says)
-noespachar()
 
 
 def retirespace(s):

@@ -48,7 +48,7 @@ def table():
             y = n*i
             tables.append(y)
 
-#Ex2
+#Ex3
 
 def noespachar():
     charlist = []
@@ -66,3 +66,20 @@ def noespachar():
             says = says + charlist[i]
     print(says)
 noespachar()
+
+
+def retirespace(s):
+    s2=""
+    for i in range(len(s)):
+        if s[i]!=" ":
+            s2+=s[i]
+            
+    print(s2)
+    return s2
+    
+def retireEspaceListe(lis):
+    t=[]
+    for i in range(len(lis)):
+        t.append(retirespace(lis[i]))
+    return t
+    
